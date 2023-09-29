@@ -1,5 +1,7 @@
 import React from 'react';
-import { ScrollView, Text, View, StyleSheet } from 'react-native';
+import {
+  ScrollView, Text, View, StyleSheet,
+} from 'react-native';
 
 import AppBar from '../components/AppBar';
 import CircleButton from '../components/CircleButton';
@@ -14,13 +16,12 @@ export default function MemoDetailScreen() {
       </View>
       <ScrollView style={styles.memoBody}>
         <Text style={styles.memoText}>
-          買い物リスト
-          ああああああああああああああああああああああ{'\n'}
+          ああああああああああああああああああああああああああああ
           いいいいいいいいいいいいいいいいいいいいいいいいいいいい
-          うううううううううううううううううううううううううううううううううううううううう
+          うううううううううううううううううううううううううううう
         </Text>
       </ScrollView>
-      <CircleButton style={{ top: 160, buttom: 'auto' }}>+</CircleButton>
+      <CircleButton style={{ top: 160, buttom: 'auto' }} name="edit-2" />
     </View>
   );
 }
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
-  memoDate:{
+  memoDate: {
     color: '#FFFFFF',
     fontSize: 12,
     lineHeight: 16,
